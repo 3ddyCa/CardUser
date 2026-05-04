@@ -1,6 +1,6 @@
 import './Card.css';
 
-function Card({pseudo, email, description, children}){
+function Card({user, children}){
 
     return <article 
     className="Card">
@@ -13,9 +13,9 @@ function Card({pseudo, email, description, children}){
             {children}
         </div>
         <article>
-            <h1>{pseudo}</h1>
-            <h2>{email}</h2>
-            <p>{description}</p>
+            <h1>{user.pseudo}</h1>
+            <h2>{user.email}</h2>
+            <p>{user.description}</p>
         </article>
     </article>
 }
