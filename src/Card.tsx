@@ -1,7 +1,12 @@
 import './Card.css';
+interface filteredUser{
+    'pseudo':string, 
+    'email':string, 
+    'description':string
+}
 
 function Card({user, children}){
-
+    const filtered: filteredUser = user;
     return <article 
     className="Card">
         <div>
@@ -13,9 +18,9 @@ function Card({user, children}){
             {children}
         </div>
         <article>
-            <h1>{user.pseudo}</h1>
-            <h2>{user.email}</h2>
-            <p>{user.description}</p>
+            <h1>{filtered.pseudo}</h1>
+            <h2>{filtered.email}</h2>
+            <p>{filtered.description}</p>
         </article>
     </article>
 }
