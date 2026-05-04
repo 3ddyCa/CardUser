@@ -7,8 +7,7 @@
     grid-template-columns: 1fr 1fr;
     margin:5px;
     &:hover{
-        transform:translateX(5px);
-        transform:translateY(5px);
+        transform:translateX(5px) translateY(5px) rotate(1deg);
         cursor:pointer;
         filter:brightness(110%);
     }
