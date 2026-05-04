@@ -10,19 +10,17 @@ function Pub(){
 }
 
 export default function App() {
-      const cardList = fixtures.map(fixture =>
+  return (
+    <>
+      <h1>Liste des utilisateurs</h1>
+      <ul className="userList">
+        {fixtures.map(fixture =>
         <li><Card 
           user={fixture}
           >
             <Pub/>
         </Card></li>
-      )
-
-  return (
-    <>
-      <h1>Liste des utilisateurs</h1>
-      <ul className="userList">
-        {cardList}
+      )}
       </ul>
     </>
   )
