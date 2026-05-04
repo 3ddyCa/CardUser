@@ -1,6 +1,6 @@
 import './Card.css';
 
-function Card(){
+function Card({pseudo, email, description, children}){
 
     return <article 
     className="Card">
@@ -10,10 +10,13 @@ function Card(){
             ></img>
         </div>
         <div>
-            <h1>Pseudo</h1>
-            <h2>Email</h2>
-            <p>Description lorem ipsum</p>
+            {children}
         </div>
+        <article>
+            <h1>{pseudo}</h1>
+            <h2>{email}</h2>
+            <p>{description}</p>
+        </article>
     </article>
 }
 
