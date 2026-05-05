@@ -15,7 +15,7 @@ export default function App() {
       <h1>Liste des utilisateurs</h1>
       <ul className="userList">
         {fixtures.map(fixture =>
-        <li><Card 
+        <li><Card key={fixtures.indexOf(fixture)}
           user={fixture}
           >
             <Pub/>
