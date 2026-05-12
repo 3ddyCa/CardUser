@@ -12,3 +12,9 @@
         filter:brightness(110%);
     }
 }
+
+.border{
+    border-color:red;
+    border-width:3px;
+    border-style:solid;
+}
